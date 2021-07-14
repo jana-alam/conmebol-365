@@ -11,7 +11,7 @@ body {
   color: #6c6c6c;
 } */
 .container {
-  max-width: 1050px;
+  max-width: 1160px;
 }
 
 main {
@@ -19,10 +19,58 @@ main {
   justify-content: center;
 }
 
-/* header-section Styles*/
+.button-fancy {
+  text-decoration: none;
+  padding: 10px 24px;
+  background: #e02c6d;
+  color: white;
+}
 
+/* header-section Styles*/
+.header-section {
+  background: #2d25a0;
+  display: flex;
+  justify-content: center;
+}
+/* nav area styles */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 42px 0 49px;
+}
+.nav-link {
+  text-decoration: none;
+  margin-right: 34px;
+  color: white;
+}
+.nav-right .button-fancy i {
+  margin-right: 10px;
+}
+.nav-right .button-fancy:hover i {
+  transform: translate(5px);
+}
+
+/* welcome-section styles */
+.welcome {
+  display: flex;
+  justify-content: center;
+}
+
+.welcome-title {
+  font-size: 64px;
+  color: white;
+}
+.welcome-contents .button-fancy i {
+  margin-left: 10px;
+}
+.welcome-contents .button-fancy:hover i {
+  transform: translate(5px);
+}
+.welcome-banner img {
+  width: 100%;
+}
 /* Players Section Styles */
-.players-area {
+.players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 27px 30px;
