@@ -1,4 +1,4 @@
-/* Imported Google Font Poppins 400 & 700*/
+/* Imported Google Font : Poppins 400 & 700*/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
@@ -7,18 +7,10 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-/* .text-color {
-  color: #6c6c6c;
-} */
+/* Need to check with normal width also */
 .container {
   max-width: 1160px;
 }
-
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .button-fancy {
   text-decoration: none;
   padding: 10px 24px;
@@ -26,13 +18,15 @@ main {
   color: white;
 }
 
-/* header-section Styles*/
+/* -------------------------
+    header-section Styles
+----------------------------*/
 .header-section {
   background: #2d25a0;
   display: flex;
   justify-content: center;
 }
-/* nav area styles */
+/* ----nav area styles----- */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -43,6 +37,9 @@ main {
   margin-right: 34px;
   color: white;
 }
+.nav-link:hover {
+  color: #e02c6d;
+}
 .nav-right .button-fancy i {
   margin-right: 10px;
 }
@@ -50,10 +47,19 @@ main {
   transform: translate(5px);
 }
 
-/* welcome-section styles */
+/* -----welcome-section styles----- */
 .welcome {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-bottom: 86px;
+}
+
+.welcome-contents {
+  width: 45%;
+}
+
+.welcome-banner {
+  width: 45%;
 }
 
 .welcome-title {
@@ -67,13 +73,22 @@ main {
   transform: translate(5px);
 }
 .welcome-banner img {
-  width: 100%;
+  max-width: 100%;
 }
-/* Players Section Styles */
+
+/* ----------------------
+  Main sections style
+  ------------------------   */
+main {
+  display: flex;
+  justify-content: center;
+}
+/* -----Players Section Styles------ */
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 27px 30px;
+  padding: 70px 0;
 }
 
 .player {
@@ -93,3 +108,7 @@ main {
 .player-info {
   color: #6c6c6c;
 }
+
+/* ----------------------
+Footer Section Styles
+---------------------- */
