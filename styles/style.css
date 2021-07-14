@@ -2,14 +2,17 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
-/* Common Styles and/or utilitis */
+/* ---------------------
+Common Styles and/or utilitis
+---------------------------- */
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-/* Need to check with normal width also */
 .container {
-  max-width: 1160px;
+  max-width: 1120px;
+  padding: 0 20px;
 }
 .button-fancy {
   text-decoration: none;
@@ -32,10 +35,14 @@ body {
   justify-content: space-between;
   padding: 42px 0 49px;
 }
-.nav-link {
+.nav-link,
+.nav-link-responsive {
   text-decoration: none;
   margin-right: 34px;
   color: white;
+}
+.nav-link-responsive {
+  display: none;
 }
 .nav-link:hover {
   color: #e02c6d;
@@ -53,17 +60,13 @@ body {
   justify-content: space-between;
   padding-bottom: 86px;
 }
-
-.welcome-contents {
-  width: 45%;
-}
-
+.welcome-contents,
 .welcome-banner {
   width: 45%;
 }
-
 .welcome-title {
-  font-size: 64px;
+  font-size: 4.45vw;
+  margin-bottom: 37px;
   color: white;
 }
 .welcome-contents .button-fancy i {
@@ -74,7 +77,6 @@ body {
 }
 .welcome-banner img {
   max-width: 100%;
-  /* /* transform: translate(0); */
   transition: 0.6s linear;
 }
 .welcome:hover .welcome-banner img {
@@ -96,7 +98,6 @@ main {
   gap: 27px 30px;
   padding: 70px 0;
 }
-
 .player {
   max-width: 300px;
   padding: 15px;
@@ -114,11 +115,9 @@ main {
 .player-info {
   color: #6c6c6c;
 }
-
 /* ----------------------
 Footer Section Styles
 ---------------------- */
-
 footer {
   display: flex;
   flex-direction: column;
@@ -137,16 +136,15 @@ footer {
 .social-icon-filled {
   color: rgba(11, 13, 23, 0.1);
 }
-
 .social-icon-color {
   color: #969bab;
 }
-
 .social-icon-color:hover {
   color: #e02c6d;
 }
-
 .footer-text {
   font-size: 18px;
   margin: 0;
 }
+
+/* end of styles */

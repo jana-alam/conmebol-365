@@ -1,0 +1,61 @@
+/* Media Query*/
+
+/* -----------
+Tablet Devices
+----------------- */
+
+@media screen and (max-width: 990px) {
+  /* Nav section */
+  .nav-link {
+    display: none;
+  }
+  .nav-link-responsive {
+    display: block;
+  }
+  /* -----Players Section Styles------ */
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .player {
+    max-width: 350px;
+  }
+  /* footer section */
+  footer {
+    padding: 20px 0;
+  }
+}
+
+/* --------------
+Mobile devices
+---------------- */
+@media screen and (max-width: 661px) {
+  /* Welcome-section */
+  .welcome {
+    flex-direction: column;
+    padding-bottom: 61px;
+  }
+  .welcome-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .welcome-contents,
+  .welcome-banner {
+    width: 100%;
+  }
+  .welcome-banner {
+    margin-top: 60px;
+  }
+  /* -----Players Section Styles------ */
+  .players {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 47px 0;
+  }
+
+  /* Footer Section */
+  footer {
+    padding-bottom: 187px;
+  }
+  .footer-logo {
+    max-width: 300px;
+  }
+}
