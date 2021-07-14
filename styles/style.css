@@ -75,6 +75,9 @@ body {
 .welcome-banner img {
   max-width: 100%;
 }
+.welcome:hover .welcome-banner {
+  transform: translate(-30px);
+}
 
 /* ----------------------
   Main sections style
