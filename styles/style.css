@@ -112,3 +112,35 @@ main {
 /* ----------------------
 Footer Section Styles
 ---------------------- */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0 63px;
+}
+.footer-logo {
+  max-width: 350px;
+}
+.footer-social-icons {
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 0 20px;
+}
+.social-icon-filled {
+  color: rgba(11, 13, 23, 0.1);
+}
+
+.social-icon-color {
+  color: #969bab;
+}
+
+.social-icon-color:hover {
+  color: #e02c6d;
+}
+
+.footer-text {
+  font-size: 18px;
+  margin: 0;
+}
